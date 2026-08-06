@@ -1,1 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>plaroids</title>
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    color: white;
+    overflow: hidden;
+}
+
+/* blurred background lights */
+body::before,
+body::after {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    filter: blur(120px);
+    opacity: .35;
+    animation: float 8s infinite alternate;
+}
+
+body::before {
+    background: #444;
+    top: -100px;
+    left: -100px;
+}
+
+body::after {
+    background: #777;
+    bottom: -120px;
+    right: -100px;
+}
+
+@keyframes float {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(60px);
+    }
+}
+
+.container {
+    position: relative;
+    width: 90%;
+    max-width: 430px;
+    text-align: center;
+    padding: 35px 25px;
+
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 30px;
+
+    box-shadow: 0 20px 60px rgba(0,0,0,.5);
+
+    animation: appear .8s ease;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+
+    border: 3px solid rgba(255,255,255,.8);
+
+    margin-bottom: 20px;
+
+    animation: pulse 4s infinite;
+}
+
+@keyframes pulse {
+    0%,100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.03);
+    }
+}
+
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.bio {
+    color: rgba(255,255,255,.7);
+    margin-bottom: 30px;
+    font-size: .95rem;
+}
+
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    text-decoration: none;
+    color: white;
+
+    background: rgba(255,255,255,.1);
+
+    border: 1px solid rgba(255,255,255,.15);
+
+    padding: 16px;
+
+    margin-bottom: 15px;
+
+    border-radius: 18px;
+
+    transition: all .3s ease;
+}
+
+
+.link i {
+    font-size: 1.2rem;
+}
+
+
+.link:hover {
+
+    background: white;
+    color: black;
+
+    transform:
+    translateY(-5px)
+    scale(1.02);
+
+    box-shadow:
+    0 10px 30px rgba(255,255,255,.15);
+}
+
+
+footer {
+    margin-top: 25px;
+    color: rgba(255,255,255,.4);
+    font-size: .8rem;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+<img src="IMG_1191.jpeg" class="profile"
+
+<h1>celia</h1>
+
+<p class="bio">
+19 • motion graphic design & photography
+</p>
+
+
+<a class="link" href="https://instagram.com/stillsbycelia" target="_blank">
+<i class="fa-brands fa-instagram"></i>
+Instagram
+</a>
+
+
+<a class="link" href="https://www.tiktok.com/@plaroids" target="_blank">
+<i class="fa-brands fa-tiktok"></i>
+TikTok
+</a>
+
+
+<a class="link" href="https://https://flickr.com/photos/204584681@N03" target="_blank">
+<i class="fa-brands fa-flickr"></i>
+Flickr
+</a>
+
+
+<footer>
+© 2026 plaroids
+</footer>
+
+
+</div>
+
+</body>
+</html>
