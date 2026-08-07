@@ -1,1 +1,74 @@
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; } body { background-color: #000000; color: #ffffff; min-height: 100vh; display: flex; justify-content: center; align-items: flex-start; padding: 60px 20px; } /* Layout Container */ .container { width: 100%; max-width: 500px; text-align: center; } /* Profile Elements */ .profile { margin-bottom: 40px; } .avatar { width: 96px; height: 96px; border-radius: 50%; border: 2px solid #ffffff; object-fit: cover; margin-bottom: 16px; padding: 4px; background-color: #000000; } .profile h1 { font-size: 1.3rem; font-weight: 700; margin-bottom: 8px; text-transform: lowercase; } .profile .bio { font-size: 0.9rem; color: #aaaaaa; max-width: 360px; margin: 0auto; line-height: 1.6; } /* Buttons / Link Cards */ .links-container { display: flex; flex-direction: column; gap: 12px; } .link-card { background-color: #000000; border: 2px solid #ffffff; color: #ffffff; text-decoration: none; padding: 16px 24px; border-radius: 0px; font-size: 0.95rem; font-weight: 600; letter-spacing: 0.5px; display: flex; align-items: center; justify-content: center; gap: 12px; transition: all 0.15s ease-in-out; position: relative; }/* Hover & Interactive States */ .link-card:hover { background-color: #ffffff; color: #000000; } .link-card i { font-size: 1.1rem; position: absolute; left: 24px; } /* Footer styling */ .footer { margin-top: 60px; font-size: 0.75rem; color: #666666; text-transform: uppercase; letter-spacing: 1px; }
+* { margin: 0; 
+   padding: 0; 
+   box-sizing: 
+     border-box; 
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  } 
+body { 
+  background-color: #000000; 
+      color: #ffffff; 
+      min-height: 100vh; 
+      display: 
+        flex; 
+      justify-content: center; align-items: flex-start; 
+      padding: 60px 20px; 
+     } 
+/* Layout Container */ 
+.container { 
+  width: 100%; 
+  max-width: 500px; 
+  text-align: 
+    center;
+} 
+/* Profile Elements */
+.profile { 
+  margin-bottom: 40px; 
+}
+.avatar { width: 96px; 
+         height: 96px; 
+         border-radius: 50%; 
+         border: 2px solid #ffffff; 
+         object-fit: cover; 
+         margin-bottom: 16px; 
+         padding: 4px; 
+         background-color: #000000; 
+        } 
+.profile h1 { font-size: 1.3rem; 
+             font-weight: 700; 
+             margin-bottom: 8px; 
+             text-transform: lowercase; 
+            }
+ /* Buttons / Link Cards */
+.links-container { display: 
+  flex; 
+  flex-direction: 
+    column; gap: 12px; 
+                 }
+.link-card { background-color: #000000; 
+            border: 2px solid #ffffff; 
+            color: #ffffff; 
+            text-decoration: none; 
+            padding: 16px 24px; 
+            border-radius: 0px; 
+            font-size: 0.95rem; 
+            font-weight: 600; 
+            letter-spacing: 0.5px; 
+            display: 
+              flex; 
+            align-items: center; justify-content: center;
+            gap: 12px; 
+            transition: all 0.15s ease-in-out; position: relative;
+           }
+/* Hover & Interactive States */
+.link-card:hover { background-color: #ffffff; 
+                  color: #000000; 
+                 } 
+.link-card i { font-size: 1.1rem; 
+              position: absolute; left: 24px;
+             } 
+/* Footer styling */
+.footer { margin-top: 60px; 
+         font-size: 0.75rem; 
+         color: #666666; 
+         text-transform: uppercase; letter-spacing: 1px; 
+        }
