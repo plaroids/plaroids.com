@@ -1,41 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>plaroids</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Optional: Font Awesome for Social Icons -->
-    <link rel="stylesheet" href="https://cloudflare.com">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>plaroids</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        html,
+        body {
+            width: 100%;
+            min-height: 100%;
+        }
+
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            min-height: 100vh;
+            padding: 60px 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 560px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .profile {
+            width: 100%;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .avatar {
+            width: 96px;
+            height: 96px;
+            display: block;
+            margin: 0 auto 16px auto;
+            border-radius: 50%;
+            border: 2px solid #ffffff;
+            object-fit: cover;
+            padding: 4px;
+            background-color: #000000;
+        }
+
+        .profile h1 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            text-transform: lowercase;
+            text-align: center;
+        }
+
+        .bio {
+            text-align: center;
+        }
+
+        .links-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .link-card {
+            width: 100%;
+            height: 106px;
+
+            background-color: #000000;
+            border: 2px solid #ffffff;
+            color: #ffffff;
+
+            text-decoration: none;
+
+            padding: 16px 24px;
+
+            font-size: 0.95rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+
+            position: relative;
+
+            transition: all 0.15s ease-in-out;
+        }
+
+        .link-card:hover {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        .link-card i {
+            font-size: 1.1rem;
+            position: absolute;
+            left: 24px;
+        }
+
+        .footer {
+            width: 100%;
+            margin-top: 60px;
+
+            font-size: 0.75rem;
+            color: #666666;
+
+            text-transform: uppercase;
+            letter-spacing: 1px;
+
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
 
-    <div class="container">
-        <!-- Profile Section -->
-        <header class="profile">
-            <img src="IMG_1191.jpeg" class="avatar">
-            <h1>celia</h1>
-          <p class="bio">coming soon</p>
-        </header>
+    <div class="container">
 
-        <!-- Links Section -->
-        <main class="links-container">
-            <a href="https://www.tiktok.com/@plaroids" target="_blank" class="link-card">
-                <i class="fas fa-tiktok"></i> tiktok
-            </a>
-            <a href="https://flickr.com/photos/204584681@N03" class="link-card">
-                <i class="fab fa-flickr"></i> flickr
-            </a>
-            <a href="https://www.instagram.com/stillsbycelia" target="_blank" class="link-card">
-                <i class="fab fa-instagram"></i> instagram
-            </a>
-            <a href="https://payhip.com/plaroids" target="_blank" class="link-card">
-                <i class="fab fa-payhip"></i> payhip
-            </a>
-        </main>
+        <header class="profile">
 
-<footer class="footer"> <p>&copy; 2026 plaroids</p> </footer>
-    </div>
+            <img
+                src="./IMG_1191.jpeg"
+                class="avatar"
+                alt="Profile picture"
+            >
+
+            <h1>celia</h1>
+
+            <p class="bio">coming soon</p>
+
+        </header>
+
+
+        <main class="links-container">
+
+            <a
+                href="https://www.tiktok.com/@plaroids"
+                target="_blank"
+                class="link-card"
+            >
+                tiktok
+            </a>
+
+            <a
+                href="https://flickr.com/photos/204584681@N03"
+                target="_blank"
+                class="link-card"
+            >
+                flickr
+            </a>
+
+            <a
+                href="https://www.instagram.com/stillsbycelia"
+                target="_blank"
+                class="link-card"
+            >
+                instagram
+            </a>
+
+            <a
+                href="https://payhip.com/plaroids"
+                target="_blank"
+                class="link-card"
+            >
+                payhip
+            </a>
+
+        </main>
+
+
+        <footer class="footer">
+            <p>&copy; 2026 plaroids</p>
+        </footer>
+
+    </div>
 
 </body>
+
 </html>
