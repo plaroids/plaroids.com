@@ -1,1 +1,0 @@
-# plaroids.com
