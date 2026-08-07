@@ -1,70 +1,42 @@
+html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background: #000;
-            color: white;
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
-        }
-
-        .content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        h1 {
-            font-size: 4rem;
-            letter-spacing: 5px;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-        }
-
-        p {
-            font-size: 1.2rem;
-            color: #aaa;
-        }
-
-        footer {
-            position: fixed;
-            bottom: 20px;
-            width: 100%;
-            text-align: center;
-            font-size: 0.9rem;
-            color: #777;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>plaroids</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Optional: Font Awesome for Social Icons -->
+    <link rel="stylesheet" href="https://cloudflare.com">
 </head>
-
 <body>
 
-    <div class="content">
-        <h1>Coming Soon</h1>
-        
-    </div>
+    <div class="container">
+        <!-- Profile Section -->
+        <header class="profile">
+            <img src="IMG_1191.jpeg" class="avatar">
+            <h1>celia</h1>
+            <p class="bio">19</p>
+        </header>
 
-    <footer>
-        © 2026 plaroids All rights reserved.
-    </footer>
+        <!-- Links Section -->
+        <main class="links-container">
+            <a href="https://www.tiktok.com/@plaroids" target="_blank" class="link-card">
+                <i class="fas fa-tiktok"></i> tiktok
+            </a>
+            <a href="https://flickr.com/photos/204584681@N03" class="link-card">
+                <i class="fab fa-flickr"></i> flickr
+            </a>
+            <a href="https://www.instagram.com/stillsbycelia" target="_blank" class="link-card">
+                <i class="fab fa-instagram"></i> instagram
+            </a>
+            <a href="https://payhip.com/plaroids" target="_blank" class="link-card">
+                <i class="fab fa-payhip"></i> payhip
+            </a>
+        </main>
+
+<footer class="footer"> <p>&copy; 2026 plaroids</p> </footer>
+    </div>
 
 </body>
 </html>
-
