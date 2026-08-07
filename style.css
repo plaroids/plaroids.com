@@ -5,68 +5,45 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-html {
-    width: 100%;
-    min-height: 100%;
-}
-
 body {
-    width: 100%;
-    min-height: 100vh;
-
-    background: #000000;
+    background-color: #000000;
     color: #ffffff;
-
+    min-height: 100vh;
     padding: 60px 20px;
-
-    text-align: center;
 }
 
-/* MAIN CONTAINER */
+/* Main container */
 .container {
     width: 100%;
     max-width: 560px;
-
     margin: 0 auto;
-
     text-align: center;
 }
 
-/* PROFILE */
+/* Profile */
 .profile {
     width: 100%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
     margin-bottom: 40px;
+    text-align: center;
 }
 
 .avatar {
     width: 96px;
     height: 96px;
-
-    display: block;
-
-    margin: 0 0 16px 0;
-
     border-radius: 50%;
     border: 2px solid #ffffff;
-
     object-fit: cover;
-
+    margin: 0 auto 16px auto;
     padding: 4px;
-
-    background: #000000;
+    background-color: #000000;
+    display: block;
 }
 
 .profile h1 {
     font-size: 1.3rem;
     font-weight: 700;
-
-    margin: 0 0 8px 0;
-
+    margin-bottom: 8px;
+    text-transform: lowercase;
     text-align: center;
 }
 
@@ -74,67 +51,53 @@ body {
     text-align: center;
 }
 
-/* LINKS */
+/* Links */
 .links-container {
     width: 100%;
-
     display: flex;
     flex-direction: column;
-    align-items: center;
-
     gap: 10px;
+    align-items: center;
 }
 
 .link-card {
     width: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    position: relative;
-
-    padding: 16px 24px;
-
-    background: #000000;
+    background-color: #000000;
     border: 2px solid #ffffff;
-
     color: #ffffff;
     text-decoration: none;
-
+    padding: 16px 24px;
+    border-radius: 0;
     font-size: 0.95rem;
     font-weight: 600;
     letter-spacing: 0.5px;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
     text-align: center;
-
     transition: all 0.15s ease-in-out;
+    position: relative;
 }
 
 .link-card:hover {
-    background: #ffffff;
+    background-color: #ffffff;
     color: #000000;
 }
 
-/* ICONS */
 .link-card i {
+    font-size: 1.1rem;
     position: absolute;
     left: 24px;
-
-    font-size: 1.1rem;
 }
 
-/* FOOTER */
+/* Footer */
 .footer {
     width: 100%;
-
     margin-top: 60px;
-
-    text-align: center;
-
     font-size: 0.75rem;
     color: #666666;
-
     text-transform: uppercase;
     letter-spacing: 1px;
+    text-align: center;
 }
